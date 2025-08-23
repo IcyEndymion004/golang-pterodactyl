@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/ash
+
 cd /home/container
 
 go version

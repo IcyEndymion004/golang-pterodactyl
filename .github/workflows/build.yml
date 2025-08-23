@@ -28,4 +28,4 @@ jobs:
           context: ./go/1.24
           file: ./go/1.24/Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/golang-pterodactyl:go_1.24
+          tags: ghcr.io/${{ steps.repo.outputs.repo }}:go_1.24

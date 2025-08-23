@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH 1.24-alpine3.22
+FROM golang:1.24-alpine AS builder
 
 
 RUN         apk add --update --no-cache ca-certificates tzdata \

@@ -1,7 +1,7 @@
 FROM golang:1.24-alpine AS builder
 
 RUN apk add --no-cache ca-certificates tzdata \
-    && adduser -D -h /home/container container
+    && adduser -D -h /home/container container && apt install git
 
 USER container
 ENV USER=container HOME=/home/container
